@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beamhub</title>
+    <link rel="icon" type="image/png" href="beam.webp">
+</head>
+<link rel="stylesheet" href="styles.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<body>
+    <header>
+        <div class="header">
+            <div class="nav-left">
+                <img src="beam_icon.webp" class="logo-img" alt="Beamhub logo">
+            </div>
+            
+            <div class="nav-center">
+                <a href="#" title="Go to home page."><i class="ri-home-line"></i> Home</a>
+                <a href="#" title="Get live content."><i class="ri-live-line"></i> Live</a>
+                <a href="#" title="Know our creators."><i class="ri-user-follow-line"></i> Creators</a>
+                <a href="#" title="See our communities."><i class="ri-video-line"></i> Communities</a>
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-bar">
+                    <button type="submit" title="Submit query." class="search-btn">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </div>
+               
+            </div>
+            
+            <div class="nav-right">
+                <button class="creator-btn" title="Become a content creator.">
+                    Become a content creator.
+                </button>
+                <img src="user.jpg" class="user-icon">  
+            </div>
+
+        </div>
+    </header>
+
+    <section class="content">
+        <img src="podcast.jpg" class="img-background">
+        <div class="podcast-player">
+            <h2>AI Basics</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nVyD6THcvDQ?si=4T1UYjPIvYhqfxiB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="video-metadata">
+        <div class="video-info">
+            <img src="user.jpg" alt="Creator image" class="creator-icon">
+            <div class="video-title">
+                <h2>AI Basics</h2>
+                <p>Jeff Su</p>
+            </div>
+        </div>
+
+        <div class="video-stats">
+            <div class="heart" title="Like this content.">
+                <i class="ri-heart-fill"></i>
+                <span>15K</span>
+            </div>
+            
+            <div class="bookmark" title="Bookmark content.">
+                <i class="ri-bookmark-fill"></i>
+                <span>2K</span>
+            </div>
+
+            <div class="share" title="Share this content.">
+                <i class="ri-share-fill"></i>
+                <span>900</span>
+            </div>
+        </div>
+
+        <div class="video-actions">
+            <button class="subscribe-btn" title="Subscribe to this creator.">
+                <i class="ri-user-add-fill"></i> Subscribe
+            </button>
+        </div>
+        
+    </section>
+
+    <hr>
+    <!-- Main content -->
+    <main class="main-content">
+        <!-- Comments section -->
+        <section class="comments">
+            <div class="comments-header">
+                <span>81 comments</span>
+                <div class="sort-by">
+                    <button>
+                        <i class="ri-filter-line" title="Sort comments."></i>
+                        <span title="Sort comments.">Sort by</span>
+                    </button>
+                </div>
+            </div> 
+
+            <div class="add-comment">
+                <img src="user.jpg" alt="User avatar" class="comment-avatar">
+                <div class="whole-comment-structure">
+                    <div class="commenting-struct">
+                        <input type="text" placeholder="Add a public comment..." class="comment-input">
+                    </div>
+                    <div class="comment-actions">
+                        <button class="comment-cancel-btn">Cancel</button>
+                        <button class="comment-btn" title="Submit your comment.">Comment</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <br>
+            
+            <!-- First Comment -->
+            <div class="comment">
+                <img src="user.jpg" alt="User avatar" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <p class="comment-author">@janedoe <span>• 22hrs ago</span> </p>
+                        <button class="more-icon" title="Report">
+                            <i class="ri-more-2-line"></i> 
+                        </button>
+                    </div>
+
+                    <div class="comment-text">
+                        <p class="comment-text">Great episode! Really enjoyed the insights on digital trends.</p>
+                    </div>
+
+                    <div class="actions">
+                        <button>
+                            <span class="thumb" title="like">
+                                <i class="ri-thumb-up-line"></i> 
+                            </span> 127
+                        </button>
+
+                        <button>
+                            <span class="thumb" title="dislike">
+                                <i class="ri-thumb-down-line"></i>
+                            </span>
+                        </button>
+                        
+                        <button>
+                            <span class="Reply">Reply</span>
+                        </button>
+                        
+                    </div>
+
+                    <!-- Replies section -->
+                    <div class="replies">
+                        <button class="view-replies">View replies</button>
+
+                        <!-- Individual reply (can be shown when button is clicked) -->
+                        <div class="reply">
+                            <img src="user.jpg" alt="User avatar" class="comment-avatar small">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <p class="comment-author">@johnsmith <span>• 5hrs ago</span></p>
+                                </div>
+                                <div class="comment-text">
+                                    <p>Totally agree with you! That part on AI was amazing.</p>
+                                </div>
+                                <div class="actions">
+                                    <button><i class="ri-thumb-up-line"></i> 12</button>
+                                    <button><i class="ri-thumb-down-line"></i></button>
+                                    <button class="reply-btn">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Second Comment -->
+            <div class="comment">
+                <img src="user.jpg" alt="User avatar" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <p class="comment-author">@janedoe <span>• 22hrs ago</span></p>
+                        <button class="more-icon" title="Report">
+                            <i class="ri-more-2-line"></i> 
+                        </button>
+                    </div>
+                    <div class="comment-text">
+                        <p class="comment-text">Great episode! Really enjoyed the insights on digital trends.</p>
+                    </div>
+                    <div class="actions">
+                        <button title="Like">
+                            <span class="thumb">
+                                <i class="ri-thumb-up-line"></i> 
+                            </span> 127
+                        </button>
+
+                        <button title="Dislike">
+                            <span class="thumb">
+                                <i class="ri-thumb-down-line"></i>
+                            </span>
+                        </button>
+                        
+                        <button>
+                            <span class="Reply">Reply</span>
+                        </button>
+                    </div>
+
+                    <!-- Replies section -->
+                    <div class="replies">
+                        <button class="view-replies">View replies</button>
+
+                        <!-- Individual reply (can be shown when button is clicked) -->
+                        <div class="reply">
+                            <img src="user.jpg" alt="User avatar" class="comment-avatar small">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <p class="comment-author">@johnsmith <span>• 5hrs ago</span></p>
+                                </div>
+                                <div class="comment-text">
+                                    <p>Totally agree with you! That part on AI was amazing.</p>
+                                </div>
+                                <div class="actions">
+                                    <button><i class="ri-thumb-up-line"></i> 12</button>
+                                    <button><i class="ri-thumb-down-line"></i></button>
+                                    <button class="reply-btn">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="comment">
+                <img src="user.jpg" alt="User avatar" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <p class="comment-author">@janedoe <span>• 22hrs ago</span></p>
+                        <button class="more-icon" title="Report">
+                            <i class="ri-more-2-line"></i> 
+                        </button>
+                    </div>
+                    <div class="comment-text">
+                        <p class="comment-text">Great episode! Really enjoyed the insights on digital trends.</p>
+                    </div>
+                    <div class="actions">
+                        <button title="Like">
+                            <span class="thumb">
+                                <i class="ri-thumb-up-line"></i> 
+                            </span> 127
+                        </button>
+
+                        <button title="Dislike">
+                            <span class="thumb">
+                                <i class="ri-thumb-down-line"></i>
+                            </span>
+                        </button>
+                        
+                        <button>
+                            <span class="Reply">Reply</span>
+                        </button>
+                    </div>
+
+                    <!-- Replies section -->
+                    <div class="replies">
+                        <button class="view-replies">View replies</button>
+
+                        <!-- Individual reply (can be shown when button is clicked) -->
+                        <div class="reply">
+                            <img src="user.jpg" alt="User avatar" class="comment-avatar small">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <p class="comment-author">@johnsmith <span>• 5hrs ago</span></p>
+                                </div>
+                                <div class="comment-text">
+                                    <p>Totally agree with you! That part on AI was amazing.</p>
+                                </div>
+                                <div class="actions">
+                                    <button><i class="ri-thumb-up-line"></i> 12</button>
+                                    <button><i class="ri-thumb-down-line"></i></button>
+                                    <button class="reply-btn">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+
+            <div class="comment">
+                <img src="user.jpg" alt="User avatar" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <p class="comment-author">@janedoe <span>• 22hrs ago</span></p>
+                        <button class="more-icon" title="Report">
+                            <i class="ri-more-2-line"></i> 
+                        </button>
+                    </div>
+                    <div class="comment-text">
+                        <p class="comment-text">Great episode! Really enjoyed the insights on digital trends.</p>
+                    </div>
+                    <div class="actions">
+                        <button title="Like">
+                            <span class="thumb">
+                                <i class="ri-thumb-up-line"></i> 
+                            </span> 127
+                        </button>
+
+                        <button title="Dislike">
+                            <span class="thumb">
+                                <i class="ri-thumb-down-line"></i>
+                            </span>
+                        </button>
+                        
+                        <button>
+                            <span class="Reply">Reply</span>
+                        </button>
+                    </div>
+
+                    <!-- Replies section -->
+                    <div class="replies">
+                        <button class="view-replies">View replies</button>
+
+                        <!-- Individual reply (can be shown when button is clicked) -->
+                        <div class="reply">
+                            <img src="user.jpg" alt="User avatar" class="comment-avatar small">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <p class="comment-author">@johnsmith <span>• 5hrs ago</span></p>
+                                </div>
+                                <div class="comment-text">
+                                    <p>Totally agree with you! That part on AI was amazing.</p>
+                                </div>
+                                <div class="actions">
+                                    <button><i class="ri-thumb-up-line"></i> 12</button>
+                                    <button><i class="ri-thumb-down-line"></i></button>
+                                    <button class="reply-btn">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="comment">
+                <img src="user.jpg" alt="User avatar" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <p class="comment-author">@janedoe <span>• 22hrs ago</span></p>
+                        <button class="more-icon" title="Report">
+                            <i class="ri-more-2-line"></i> 
+                        </button>
+                    </div>
+                    <div class="comment-text">
+                        <p class="comment-text">Great episode! Really enjoyed the insights on digital trends.</p>
+                    </div>
+                    <div class="actions">
+                        <button title="Like">
+                            <span class="thumb">
+                                <i class="ri-thumb-up-line"></i> 
+                            </span> 127
+                        </button>
+
+                        <button title="Dislike">
+                            <span class="thumb">
+                                <i class="ri-thumb-down-line"></i>
+                            </span>
+                        </button>
+                        
+                        <button>
+                            <span class="Reply">Reply</span>
+                        </button>
+                    </div>
+
+                    <!-- Replies section -->
+                    <div class="replies">
+                        <button class="view-replies">View replies</button>
+
+                        <!-- Individual reply (can be shown when button is clicked) -->
+                        <div class="reply">
+                            <img src="user.jpg" alt="User avatar" class="comment-avatar small">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <p class="comment-author">@johnsmith <span>• 5hrs ago</span></p>
+                                </div>
+                                <div class="comment-text">
+                                    <p>Totally agree with you! That part on AI was amazing.</p>
+                                </div>
+                                <div class="actions">
+                                    <button><i class="ri-thumb-up-line"></i> 12</button>
+                                    <button><i class="ri-thumb-down-line"></i></button>
+                                    <button class="reply-btn">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="comment">
+                <img src="user.jpg" alt="User avatar" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <p class="comment-author">@janedoe <span>• 22hrs ago</span></p>
+                        <button class="more-icon" title="Report">
+                            <i class="ri-more-2-line"></i> 
+                        </button>
+                    </div>
+                    <div class="comment-text">
+                        <p class="comment-text">Great episode! Really enjoyed the insights on digital trends.</p>
+                    </div>
+                    <div class="actions">
+                        <button title="Like">
+                            <span class="thumb">
+                                <i class="ri-thumb-up-line"></i> 
+                            </span> 127
+                        </button>
+
+                        <button title="Dislike">
+                            <span class="thumb">
+                                <i class="ri-thumb-down-line"></i>
+                            </span>
+                        </button>
+                        
+                        <button>
+                            <span class="Reply">Reply</span>
+                        </button>
+                    </div>
+
+                    <!-- Replies section -->
+                    <div class="replies">
+                        <button class="view-replies">View replies</button>
+
+                        <!-- Individual reply (can be shown when button is clicked) -->
+                        <div class="reply">
+                            <img src="user.jpg" alt="User avatar" class="comment-avatar small">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <p class="comment-author">@johnsmith <span>• 5hrs ago</span></p>
+                                </div>
+                                <div class="comment-text">
+                                    <p>Totally agree with you! That part on AI was amazing.</p>
+                                </div>
+                                <div class="actions">
+                                    <button><i class="ri-thumb-up-line"></i> 12</button>
+                                    <button><i class="ri-thumb-down-line"></i></button>
+                                    <button class="reply-btn">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </section>
+
+
+        <!-- Recommended content section -->
+        <aside class="related-videos">
+            <div class="related-card">
+                <img src="ai.avif" alt="Video 1 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Exploring AI Tools in 2025</h4>
+                    <p class="related-meta">TechVerse • 45K views • 2 days ago</p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+            <div class="related-card">
+                <img src="ai.avif" alt="Video 1 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Exploring AI Tools in 2025</h4>
+                    <p class="related-meta">TechVerse • 45K views • 2 days ago</p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+            <div class="related-card">
+                <img src="ai.avif" alt="Video 1 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Exploring AI Tools in 2025</h4>
+                    <p class="related-meta">TechVerse • 45K views • 2 days ago</p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+            <div class="related-card">
+                <img src="ai.avif" alt="Video 1 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Exploring AI Tools in 2025</h4>
+                    <p class="related-meta">TechVerse • 45K views • 2 days ago</p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+            <div class="related-card">
+                <img src="ai.avif" alt="Video 1 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Exploring AI Tools in 2025</h4>
+                    <p class="related-meta">TechVerse • 45K views • 2 days ago</p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+            <div class="related-card">
+                <img src="hqdefault.avif" alt="Video 2 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Israel Mbonyi - Unkebuke</h4>
+                    <p class="related-meta">Israel Mbonyi </p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+            <div class="related-card">
+                <img src="hqdefault.avif" alt="Video 2 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Israel Mbonyi - Unkebuke</h4>
+                    <p class="related-meta">Israel Mbonyi </p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+
+            <div class="related-card">
+                <img src="hqdefault.avif" alt="Video 2 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Israel Mbonyi - Unkebuke</h4>
+                    <p class="related-meta">Israel Mbonyi </p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+
+
+            <div class="related-card">
+                <img src="hqdefault.avif" alt="Video 2 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Israel Mbonyi - Unkebuke</h4>
+                    <p class="related-meta">Israel Mbonyi </p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+
+
+            <div class="related-card">
+                <img src="hqdefault.avif" alt="Video 2 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Israel Mbonyi - Unkebuke</h4>
+                    <p class="related-meta">Israel Mbonyi </p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+
+            <div class="related-card">
+                <img src="hqdefault.avif" alt="Video 2 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Israel Mbonyi - Unkebuke</h4>
+                    <p class="related-meta">Israel Mbonyi </p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+            <div class="related-card">
+                <img src="hqdefault.avif" alt="Video 2 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Israel Mbonyi - Unkebuke</h4>
+                    <p class="related-meta">Israel Mbonyi </p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+            <div class="related-card">
+                <img src="hqdefault.avif" alt="Video 2 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Israel Mbonyi - Unkebuke</h4>
+                    <p class="related-meta">Israel Mbonyi </p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+
+            <div class="related-card">
+                <img src="hqdefault.avif" alt="Video 2 thumbnail" class="thumb">
+                <div class="related-info">
+                    <h4 class="related-title">Israel Mbonyi - Unkebuke</h4>
+                    <p class="related-meta">Israel Mbonyi </p>
+                    <p class="related-info">257K • 2 days ago </p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+
+    <!-- Script Button -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    // Select all 'view replies' buttons
+    const viewRepliesButtons = document.querySelectorAll('.view-replies');
+
+    viewRepliesButtons.forEach(button => {
+        button.addEventListener('click', () => {
+        // Find the replies within the same comment only
+        const comment = button.closest('.comment');
+        const replies = comment.querySelectorAll('.reply');
+
+        replies.forEach(reply => reply.classList.toggle('show'));
+
+        // Toggle button text
+        button.textContent = button.textContent.includes('View')
+            ? 'Hide replies'
+            : 'View replies';
+        });
+    });
+    });
+    </script>
+
+
+</body>
+</html>
