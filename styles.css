@@ -294,7 +294,6 @@
     }
 
     .subscribe-btn:hover {
-    color:yellow;
     transform: scale(1.05);
     opacity: 0.7;
     }
@@ -348,7 +347,8 @@
     .add-comment {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 15px;
+    gap: 10px;
+    margin: 10px 0;
     }
 
     .comment-avatar{
@@ -362,8 +362,8 @@
     }
     
     .whole-comment-structure{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     flex: 1;
     }
 
@@ -371,6 +371,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    width: 100%;
     }
 
     .comment-input{
@@ -389,7 +390,22 @@
 
     .comment-actions{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    }
+
+    .emoji-btn {
+    font-size: 20px;
+    background: none;
+    border-radius: 25px;
+    }
+
+    .emoji-picker {
+    position: absolute;
+    left: 30;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    border-radius: 10px;
     }
 
     .comment {  
@@ -398,6 +414,7 @@
     align-items: flex-start;
     }
 
+    
     .comment-content{
     background-color: transparent;
     padding: 2px 2px;
@@ -432,7 +449,8 @@
     .comment-cancel-btn{
     background: none;
     border: 2px solid black;   
-    color: #888;
+    color: white;
+    font-weight: bold;
     font-size: 14px;        
     cursor: pointer;     
     margin-right: 10px;
@@ -441,13 +459,13 @@
     }
 
     .comment-cancel-btn:hover {
-    color: white;   
+    background-color: darkgrey;   
     }
 
     .comment-btn{
-    background-color: #f3f1f1;
+    background-color: grey;
     color: black;
-    border: 2px solid yellow;
+    border: 2px solid black;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 14px;
@@ -460,11 +478,6 @@
     border-color: #555;
     cursor: not-allowed;
     }
-
-    .comment-actions .comment-btn:not(:disabled):hover {
-    color: yellow;  
-    }
-
 
     .more-icon{
     font-size: 22px;
@@ -491,6 +504,12 @@
     border-left: 2px solid #e0e0e0;
     padding-left: 10px;
     }
+
+    .add-reply .add-comment {
+        margin-bottom: 10px; 
+    }
+
+
 
     .view-replies {
     background: none;

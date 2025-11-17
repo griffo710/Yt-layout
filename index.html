@@ -6,6 +6,8 @@
     <title>Beamhub</title>
     <link rel="icon" type="image/png" href="beam.webp">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/emoji-mart@5.6.0/dist/browser.js"></script>
+    <script src="index.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
@@ -107,8 +109,14 @@
                         <input type="text" placeholder="Add a public comment..." class="comment-input">
                     </div>
                     <div class="comment-actions">
-                        <button class="comment-cancel-btn">Cancel</button>
-                        <button class="comment-btn" title="Submit your comment.">Comment</button>
+                        <div>
+                            <button class="emoji-btn">😊</button>
+                            <div class="emoji-picker" style="display:none;"></div>
+                        </div>
+                        <div>
+                            <button class="comment-cancel-btn">Cancel</button>
+                            <button class="comment-btn" title="Submit your comment.">Comment</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -167,12 +175,11 @@
                                 <div class="actions">
                                     <button><i class="ri-thumb-up-line"></i> 12</button>
                                     <button><i class="ri-thumb-down-line"></i></button>
-                                    <button class="reply-btn">Reply</button>
+                                    <button class="Reply">Reply</button>
                                 </div>
                             </div>
-                        </div>
+                        </div>   
                     </div>
-                    
                 </div>
             </div>  
         </section>
@@ -200,6 +207,5 @@
         </aside>
         
     </main>
-    <script src="index.js"></script>
 </body>
 </html>
