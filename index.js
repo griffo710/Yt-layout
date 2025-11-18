@@ -151,6 +151,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// The more button to display report flag
+document.addEventListener("DOMContentLoaded", () => {
+    const allMoreBtns = document.querySelectorAll(".more-icon"); // select all buttons
+
+    allMoreBtns.forEach(btn => {
+        const menu = btn.nextElementSibling; // menu is right after button
+
+        // Toggle menu on click
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation(); // prevent the document click from closing immediately
+            // Hide all other menus first
+            document.querySelectorAll(".more-menu").forEach(m => {
+                if (m !== menu) m.style.display = "none";
+            });
+
+            // Toggle this menu
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        });
+    });
+
+    // Close menu if click outside
+    document.addEventListener("click", () => {
+        document.querySelectorAll(".more-menu").forEach(menu => {
+            menu.style.display = "none";
+        });
+    });
+});
+
+
+
 // Reply button to view sub replies.
 document.addEventListener("DOMContentLoaded", () => {
 // Select all 'view replies' buttons
